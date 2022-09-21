@@ -1,35 +1,79 @@
 name: nndl
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
   - blas=1.0=mkl
-  - ca-certificates=2022.07.19=h06a4308_0
-  - certifi=2020.6.20=pyhd3eb1b0_3
+  - ca-certificates=2022.9.14=ha878542_0
+  - certifi=2016.9.26=py35_0
+  - cycler=0.10.0=py35hc4d5149_0
+  - dbus=1.13.18=hb2f20db_0
+  - decorator=5.1.1=pyhd3eb1b0_0
+  - expat=2.4.4=h295c915_0
+  - fontconfig=2.13.1=h6c09931_0
+  - freetype=2.11.0=h70c0345_0
+  - glib=2.69.1=h4ff587b_1
+  - gst-plugins-base=1.14.0=h8213a91_2
+  - gstreamer=1.14.0=h28cd5cc_2
+  - icu=58.2=he6710b0_3
   - intel-openmp=2022.0.1=h06a4308_3633
+  - ipykernel=4.10.0=py35_0
+  - ipython=5.8.0=py35_0
+  - ipython_genutils=0.2.0=pyhd3eb1b0_1
+  - jpeg=9e=h7f8727e_0
+  - jupyter_client=5.3.3=py_0
+  - jupyter_core=4.5.0=py_0
+  - kiwisolver=1.0.1=py35hf484d3e_0
   - libffi=3.3=he6710b0_2
   - libgcc-ng=11.2.0=h1234567_1
   - libgfortran-ng=7.5.0=ha8ba4b0_17
   - libgfortran4=7.5.0=ha8ba4b0_17
   - libgomp=11.2.0=h1234567_1
+  - libpng=1.6.37=hbc83047_0
+  - libsodium=1.0.16=h1bed415_0
   - libstdcxx-ng=11.2.0=h1234567_1
+  - libuuid=1.0.3=h7f8727e_2
+  - libxcb=1.15=h7f8727e_0
+  - libxml2=2.9.14=h74e7548_0
+  - matplotlib=3.0.0=py35h5429711_0
   - mkl=2018.0.3=1
   - mkl_fft=1.0.6=py35h7dd41cf_0
   - mkl_random=1.0.1=py35h4414c95_1
   - ncurses=6.3=h5eee18b_3
   - numpy=1.15.2=py35h1d66e8a_0
   - numpy-base=1.15.2=py35h81de0dd_0
-  - openssl=1.1.1q=h7f8727e_0
+  - openssl=1.1.1l=h7f98852_0
+  - pandas=0.22.0=py35_1
+  - pcre=8.45=h295c915_0
+  - pexpect=4.8.0=pyhd3eb1b0_3
+  - pickleshare=0.7.5=pyhd3eb1b0_1003
   - pip=10.0.1=py35_0
+  - prompt_toolkit=1.0.15=py35hc09de7a_0
+  - ptyprocess=0.7.0=pyhd3eb1b0_2
+  - pygments=2.11.2=pyhd3eb1b0_0
+  - pyparsing=2.4.7=pyhd3eb1b0_0
+  - pyqt=5.9.2=py35h05f1152_2
   - python=3.5.6=h12debd9_1
+  - python-dateutil=2.8.2=pyhd3eb1b0_0
+  - pytz=2021.3=pyhd3eb1b0_0
+  - pyzmq=17.1.2=py35h14c3975_0
+  - qt=5.9.7=h5867ecd_1
   - readline=8.1.2=h7f8727e_1
   - setuptools=40.2.0=py35_0
+  - simplegeneric=0.8.1=py35_2
+  - sip=4.19.8=py35hf484d3e_0
+  - six=1.16.0=pyhd3eb1b0_1
   - sqlite=3.39.0=h5082296_0
   - tbb=2021.5.0=hd09550d_0
   - tbb4py=2018.0.5=py35h6bb024c_0
   - tk=8.6.12=h1ccaba5_0
+  - tornado=5.1.1=py35h7b6447c_0
+  - traitlets=4.3.2=py35ha522a97_0
+  - wcwidth=0.2.5=pyhd3eb1b0_0
   - wheel=0.37.1=pyhd3eb1b0_0
   - xz=5.2.5=h7f8727e_1
+  - zeromq=4.2.5=hf484d3e_1
   - zlib=1.2.12=h7f8727e_2
 prefix: /home/owly/miniconda3/envs/nndl
