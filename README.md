@@ -16,14 +16,18 @@ The following steps assume that you are running python in a conda environment.
 2. Create a new conda environment by importing `nndl.yml`.
 3. Run `shell.ipynb` in jupyter notebook (or whatever floats your boat) using the nndl environment. 
 
+
 ## Results
 ![Figure 1](results/timeTaken.png)
+
 Figure 1 shows the graph of time taken per epoch against the size of minibatch. The time taken per epoch using for-loop-based SGD remains relatively constant while the time taken per epoch using matrix-based SGD decreases. This is expected because the greater the size of the minibatch, the greater the size of each matrix. Thus, the total number of operations in matrix-based SGD would decrease, while thenumber of operations in for-loop-based SGD stays constant.
 
 However, the time taken per epoch bottoms out when the size of minibatch is roughly 2^6 - 2^8. This is a good time to examine the graphs time difference and speed increase against the size of minibatch, as shown in Figure 2.
+
 ![Figure 2](results/timeSpeed.png)
 
 Notice that the largest speed increase is from 2^6 to 2^8, maxing out at 52.07% when Size of minibatch = 2^8. The speed increase, drops of after 2^8, but still remains positive. 
+
 
 ## Discussion
 Does this mean we should use mini-batches with a size of 2^8 = 256 to maximise the speed increase from matrixes? Not necessarily.
@@ -36,6 +40,7 @@ When we plot the graph of average accuracy of the last training epochs against e
 Therefore, in order to benefit from the speed gains of matrixed minibatches and still achieve good training accuracy within a limited number of epochs, it makes sense to use a minibatch with a size in between the two ranges 2^6 - 2^8 and 2^1 - 2^5. Hence, a reasonable conclusion based on the above results would be to use a minibatch of size 2^5=32 or 2^6=64.
 
 This result concurs with literature by Bengio [2](https://arxiv.org/abs/1206.5533) and more recently, Masters and Luschi [3](https://arxiv.org/abs/1804.07612) on the recommended size of minibatch used in training of neural networks, both of which recommend a minibatch of size 32.
+
 
 ## Further work
 This investigation only considers a simple neural network architecture with only 1 hidden layer. The loss function used is the Mean Squared Error loss, which is not commonly used in modern neural networks in favour of Cross Entropy Loss due to the training slow down experienced when using MSE. Different loss functions and more complex architectures such as Convolutional Neural Networks can be experimented with.
@@ -50,5 +55,7 @@ This investigation does not attempt to recommend a minibatch size as there are n
 
 ## References
 [1] Nielson, M. (2015). Neural Networks and Deep Learning, Determination Press. Retrieved September 21, 2022, from http://neuralnetworksanddeeplearning.com/ 
+
 [2] Bengio, Y. (2012, September 16). Practical recommendations for gradient-based training of Deep Architectures. arXiv.org. Retrieved September 21, 2022, from https://arxiv.org/abs/1206.5533 
+
 [3] Masters, D., &amp; Luschi, C. (2018, April 20). Revisiting small batch training for Deep Neural Networks. arXiv.org. Retrieved September 21, 2022, from https://arxiv.org/abs/1804.07612 
