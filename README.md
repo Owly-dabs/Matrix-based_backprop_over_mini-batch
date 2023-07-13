@@ -1,4 +1,4 @@
-# Investigation of the use of matrixes in mini-batch stochastic gradient optimization
+# Investigation of the performance gain from the use of matrixes in mini-batch stochastic gradient optimization
 
 ## Overview
 This investigation aims to determine the performance of a matrix-based approach to mini-batch stochastic gradient descent (SGD) in comparison to a for-loop-based approach to mini-batch SGD, in terms of its training speed and time, over a range of mini-batch sizes. 
